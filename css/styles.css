@@ -1,0 +1,155 @@
+/*---------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+  
+    1. Header
+    2. Who am I
+    3. About
+    4. Fortfolio Area
+    5. Contact Area
+    6. Footer Area
+
+-----------------------------------------------------------------------------------*/
+
+/*============================================
+* 1. Header Area
+*=============================================*/
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background: #202020;
+}
+/* .logo {
+} */
+.logo a {
+  display: inline-block;
+}
+.logo a img {
+  max-width: 43px;
+}
+/* .main-menu {
+} */
+.main-menu nav ul {
+  text-align: right;
+}
+.main-menu nav ul li {
+  display: inline-block;
+}
+.main-menu nav ul li a {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 35px 17px;
+  position: relative;
+}
+
+.main-menu nav ul li a:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 17%;
+  height: 7px;
+  width: 7px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.main-menu nav ul li a:after {
+  content: attr(data-hover);
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  opacity: 0;
+  transform: translateX(-50%);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.main-menu nav ul li a:hover:after {
+  opacity: 1;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-menu nav ul li.active a:before {
+  opacity: 1;
+}
+.main-menu nav ul li a span {
+  display: block;
+  -webkit-transition: all 0.15s ease-in-out 0s;
+  -o-transition: all 0.15s ease-in-out 0s;
+  transition: all 0.15s ease-in-out 0s;
+}
+.main-menu nav ul li a:hover span {
+  transform: translate3d(0, -12px, 0);
+  opacity: 0;
+}
+
+.slicknav_menu .slicknav_menutxt {
+  display: none;
+}
+
+.slicknav_menu {
+  background: transparent;
+  margin-top: 21px;
+}
+
+.slicknav_menu .slicknav_icon-bar {
+  height: 2px;
+  width: 19px;
+  margin: 3px 0px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.slicknav_btn {
+  background-color: transparent;
+  position: relative;
+  margin-top: -38px;
+}
+
+.slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(2) {
+  opacity: 0;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+}
+
+.slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(1px, 7px);
+  transform: rotate(45deg) translate(1px, 7px);
+}
+
+.slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translateY(-6px);
+  transform: rotate(-45deg) translateY(-6px);
+}
+
+.slicknav_menu {
+  margin-top: 0;
+}
+
+.slicknav_nav {
+  background: #0c0c0c;
+  margin: 0;
+  padding: 6px 0px;
+  margin-top: 10px;
+}
+
+.slicknav_nav a:hover {
+  background: #fefefe none repeat scroll 0 0;
+  border-radius: 0;
+}
+
+.slicknav_nav a {
+  font-size: 14px;
+  letter-spacing: 0.01em;
+}
