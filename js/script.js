@@ -69,18 +69,18 @@
   /*================================
   6. Animation Style/Css
   ==================================*/
-  if (!isMobile) {
-    var txtanim1Parent = $('.txtanim1, .anim_span');
-    var txtanim1Span = $('.txtanim1 span, .anim_span span');
-    var txtanim1SpanDelay = $('.txtanim1.delay1 span');
-    txtanim1Parent.css({ overflow: 'hidden' });
-    txtanim1Span.css({
-      display: 'inline-block',
-      transform: 'translate3d(0px, 100%, 0px)',
-      transition: 'all 0.3s ease 0s'
-    });
-    txtanim1SpanDelay.css({ transition: 'all 0.3s ease 0.1s' });
-  }
+  // if (!isMobile) {
+  var txtanim1Parent = $('.txtanim1, .anim_span');
+  var txtanim1Span = $('.txtanim1 span, .anim_span span');
+  var txtanim1SpanDelay = $('.txtanim1.delay1 span');
+  txtanim1Parent.css({ overflow: 'hidden' });
+  txtanim1Span.css({
+    display: 'inline-block',
+    transform: 'translate3d(0px, 100%, 0px)',
+    transition: 'all 0.3s ease 0s'
+  });
+  txtanim1SpanDelay.css({ transition: 'all 0.3s ease 0.1s' });
+  // }
 
   /*================================
   7. Add Class Is ScrollView
