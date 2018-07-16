@@ -36,17 +36,17 @@
   4. Preloader
   ==================================*/
   function prealoaderSetup() {
-    if (!isMobile) {
-      setTimeout(function() {
-        $('body').addClass('loaded');
-      }, 800);
+    // if (!isMobile) {
+    setTimeout(function() {
+      $('body').addClass('loaded');
+    }, 800);
 
-      setTimeout(function() {
-        preloader.remove();
-      }, 2000);
-    } else {
+    setTimeout(function() {
       preloader.remove();
-    }
+    }, 2000);
+    // } else {
+    //   preloader.remove();
+    // }
   }
 
   /*================================
